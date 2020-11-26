@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/390405712/production-deployment.git"
+    "url": "git+https://github.com/390405712/dist-deploy.git"
   },
   "author": "wulihua",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/390405712/production-deployment/issues"
+    "url": "https://github.com/390405712/dist-deploy/issues"
   },
-  "homepage": "https://github.com/390405712/production-deployment#readme",
+  "homepage": "https://github.com/390405712/dist-deploy#readme",
   "dependencies": {
     "compressing": "^1.5.1",
     "inquirer": "^7.3.3",
