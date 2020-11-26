@@ -1,6 +1,6 @@
 {
   "name": "dist-deploy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "生产包部署工具",
   "main": "guide.js",
   "scripts": {
