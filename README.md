@@ -29,7 +29,7 @@ module.exports = {
 ```json
   "scripts": {
     "pkg:out": "npm run build:out && cd node_modules/dist-deploy && npm run out",
-    "pkg:in": "npm run build:out && cd node_modules/dist-deploy && npm run in",
+    "pkg:in": "npm run build:in && cd node_modules/dist-deploy && npm run in",
     "build:out": "vue-cli-service build --mode prodOut",
     "build:in": "vue-cli-service build --mode prodIn",
   }
