@@ -1,0 +1,28 @@
+{
+  "name": "dist-deploy",
+  "version": "0.0.2",
+  "description": "生产包部署工具",
+  "main": "guide.js",
+  "scripts": {
+    "guide": "node guide.js",
+    "in": "node verify.js --prefix=内网",
+    "out": "node verify.js --prefix=外网"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/390405712/production-deployment.git"
+  },
+  "author": "wulihua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/390405712/production-deployment/issues"
+  },
+  "homepage": "https://github.com/390405712/production-deployment#readme",
+  "dependencies": {
+    "compressing": "^1.5.1",
+    "inquirer": "^7.3.3",
+    "recursive-readdir": "^2.2.2",
+    "request": "^2.88.2",
+    "ssh2-sftp-client": "^5.3.2"
+  }
+}
