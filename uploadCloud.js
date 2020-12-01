@@ -1,5 +1,6 @@
 const request = require('request')
 const readline = require('readline')
+require('./consolePng').attachTo(console)
 const {
   success,
   info,
@@ -54,9 +55,12 @@ function getImg(once = true) {
         res.caseless.dict['set-cookie'][1].split(';')[0]
       fs.writeFile(sessionTxt, cookie, 'utf8', () => {})
       fs.writeFile(codePng, dataBuffer, () => {
-        success('成功', '验证码图片已生成，打开以下路径查看验证码')
+        success('成功', '验证码图片已生成')
         console.log(codePng)
-        info('提示', '输入验证码：')
+        console.png(codePng)
+        setTimeout(() => {
+          info('提示', '输入验证码：')
+        }, 300)
         once && writeCode()
       })
     }
@@ -143,7 +147,7 @@ function upload() {
           cookie,
         },
       },
-      function optionalCallback(error, res, body) {
+      (error, res, body) => {
         clearInterval(timer)
         if (error) return err('上传失败：', error)
         if (body.includes('401')) {

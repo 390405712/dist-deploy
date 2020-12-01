@@ -1,6 +1,6 @@
 {
   "name": "@wulihua/dist-deploy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "生产包部署工具",
   "main": "guide.js",
   "scripts": {
@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/390405712/dist-deploy#readme",
   "dependencies": {
+    "ansi-256-colors": "^1.1.0",
     "compressing": "^1.5.1",
     "inquirer": "^7.3.3",
+    "png.js": "^0.2.1",
     "recursive-readdir": "^2.2.2",
     "request": "^2.88.2",
     "ssh2-sftp-client": "^5.3.2"
