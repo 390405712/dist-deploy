@@ -7,7 +7,7 @@
 ```js
 module.exports = {
   projectName: '', // 项目名
-  distPath: 'dist', // 生产包地址，默认：dist，不已 / 为开头
+  distPath: 'dist', // 生产包地址，默认：dist，不以 / 为开头
   // 外网部署配置
   outConfig: {
     host: '', // 主机名
